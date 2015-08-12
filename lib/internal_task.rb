@@ -9,14 +9,17 @@ module InternalTask
     desc 'Say hello'
 
     task :hello do
-      helper = Helper.new
-      helper.puts_hello
+      puts 'running the task..'
+
+      Helper.print_the_message
+
+      puts 'done!'
     end
   end
 
-  class Helper
+  module Helper
 
-    def puts_hello
+    def self.print_the_message
       puts 'hello!'
     end
 
