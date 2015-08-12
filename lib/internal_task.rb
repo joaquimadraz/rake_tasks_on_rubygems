@@ -1,4 +1,5 @@
 require 'internal_task/version'
+require 'rake' unless defined? Rake
 
 module InternalTask
 
